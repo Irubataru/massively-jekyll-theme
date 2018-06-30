@@ -16,8 +16,10 @@
     <div id="wrapper">
       {% include header.html %}
       {% include navigation.html %}
-      {{ content }}
-      {% include copyright.html %}
+      <div id="main">
+        {{ content }}
+      </div>
+      {% include footer.html %}
     </div>
     {% include scripts.html %}
   </body>
