@@ -1,0 +1,9 @@
+main:
+  - url: "/"
+    title: "This is massively"
+  - url: "/generic/"
+    title: "Generic page"
+  - url: "/elements/"
+    title: "Elements reference"
+
+include_social: true

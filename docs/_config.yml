@@ -1,0 +1,45 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+remote_theme: irubataru/massively-jekyll-theme
+
+# Site settings
+title: Massively
+subtitle: "by HTML5 UP"
+email: youremailaddress@gmail.com
+phone: (000) 000-0000
+description: The Jekyll version of the Massively theme by HTML5 UP.
+baseurl: "/massively-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "https://irubataru.github.io" # the base hostname & protocol for your site
+
+# Logo settings
+logo-image-url:
+font-awesome-icon-logo:
+
+# Social settings
+github: mygithub
+twitter: mytwittername
+facebook: myfacebook
+instagram: myinstagram
+
+# Build settings
+markdown: kramdown
+
+include:
+  - _pages
+
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - massively_jekyll_theme.gemspec
+
+compress_html:
+  clippings: []
+  blanklines: false
+  comments: all
