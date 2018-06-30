@@ -1,0 +1,21 @@
+{% assign navigation = site.data.navigation.main %}
+
+{% if navigation %}
+<nav id="nav">
+	<ul class="links">
+    {% for nav in navigation %}
+      <li {% if nav == navigation.first %} class="active" {% endif %}>
+      {% comment %} internal/external URL check {% endcomment %}
+      {% if nav.url contains "://" %}
+        {% assign nav_url = nav.url %}
+      {% elsif nav.url %}
+        {% assign nav_url = nav.url | relative_url %}
+      {% else %}
+        {% assign nav_url = "#" %}
+      {% endif %}
+      <a href="{{ nav_url }}">{{ nav.title }}</a>
+      </li>
+    {% endfor %}
+	</ul>
+</nav>
+{% endif %}

@@ -10,7 +10,8 @@ title: Massively
 subtitle: "by HTML5 UP"
 email: youremailaddress@gmail.com
 description: The Jekyll version of the Massively theme by HTML5 UP.
-baseurl: "/massively-jekyll-theme" # the subpath of your site, e.g. /blog
+#baseurl: "/massively-jekyll-theme" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Logo settings
@@ -21,15 +22,20 @@ font-awesome-icon-logo:
 github: mygithub
 twitter: mytwittername
 facebook: myfacebook
-instagram:
-dribbble: 
-google_plus:
+instagram: myinstagram
 
 # Build settings
 markdown: kramdown
 
 include:
   - _pages
+
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - massively_jekyll_theme.gemspec
 
 compress_html:
   clippings: []
