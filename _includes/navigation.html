@@ -18,5 +18,11 @@
       </li>
     {% endfor %}
 	</ul>
+
+  {% if site.data.navigation.include_social %}
+  <ul class="icons">
+    {% include social_icons.html %}
+  </ul>
+  {% endif %}
 </nav>
 {% endif %}
