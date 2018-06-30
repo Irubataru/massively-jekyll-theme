@@ -4,7 +4,8 @@
 <nav id="nav">
 	<ul class="links">
     {% for nav in navigation %}
-      <li {% if nav == navigation.first %} class="active" {% endif %}>
+      <li 
+        {% if nav.url == page.url %} class="active" {% endif %}>
       {% comment %} internal/external URL check {% endcomment %}
       {% if nav.url contains "://" %}
         {% assign nav_url = nav.url %}

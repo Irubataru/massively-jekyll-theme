@@ -29,6 +29,7 @@ markdown: kramdown
 
 include:
   - _pages
+  - _posts
 
 exclude:
   - .gitignore

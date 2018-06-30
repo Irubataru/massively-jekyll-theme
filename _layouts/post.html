@@ -1,0 +1,26 @@
+---
+layout: default
+is_preload: true
+---
+
+<section class="post">
+  {% if page.header %}
+  <header class="major">
+    {% if page.header.date %}
+      <span class="date">{{ page.header.date }}</span>
+    {% elsif page.date %}
+      <span class="date">{{ page.date }}</span>
+    {% endif %}
+
+    {% if page.header.title %}
+      <h1>{{ page.header.title }}</h1>
+    {% endif %}
+
+    {% if page.header.description %}
+      <p>{{ page.header.description }}</p>
+    {% endif %}
+  </header>
+  {% endif %}
+
+  {{ content }}
+</section>

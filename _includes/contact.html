@@ -30,7 +30,7 @@
     <p>
     {% if contact.address.first %}
       {% for line in contact.address %}
-        {{ line }}<br />
+        {{ line }}{% if line != contact.address.last %}<br />{% endif %}
       {% endfor %}
     {% else %}
       {{ contact.address }}
