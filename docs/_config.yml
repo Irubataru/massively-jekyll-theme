@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-remote_theme: irubataru/massively-jekyll-theme
+remote_theme: irubataru/massively-jekyll-theme@devel
 
 # Site settings
 title: Massively
@@ -28,6 +28,10 @@ instagram: myinstagram
 
 # Build settings
 markdown: kramdown
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 6
+paginate_path: /page:num/
 
 include:
   - _pages
