@@ -9,7 +9,7 @@ is_preload: true
     {% if page.header.date %}
       <span class="date">{{ page.header.date }}</span>
     {% elsif page.date %}
-      <span class="date">{{ page.date }}</span>
+      <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
     {% endif %}
 
     {% if page.header.title %}
@@ -20,6 +20,21 @@ is_preload: true
       <p>{{ page.header.description }}</p>
     {% endif %}
   </header>
+  {% endif %}
+
+  {% if page.image %}
+    {% if page.image.thumbnail %}
+      {% assign entry_image = page.image.thumbnail %}
+    {% elsif page.image.header %}
+      {% assign entry_image = page.image.header %}
+    {% else %}
+      {% assign entry_image = page.image %}
+    {% endif %}
+    {% unless entry_image contains '://' %}
+      {% assign entry_image = entry_image | relative_url %}
+    {% endunless %}
+    {% assign entry_image = entry_image | escape %}
+    <img src="{{ entry_image }}" class="image main" alt="" />
   {% endif %}
 
   {{ content }}
