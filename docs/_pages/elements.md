@@ -2,8 +2,7 @@
 permalink: /elements/
 layout: post
 is_preload: true
-header:
-  title: "Elements<br />Reference"
+title: "Elements<br />Reference"
 ---
 
 <!-- Text stuff -->

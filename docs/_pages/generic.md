@@ -2,13 +2,14 @@
 permalink: /generic/
 layout: post
 is_preload: true
-header:
-  date: April 25, 2017
-  title: "This is a<br /> Generic Page"
-  description: "Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />amet nullam sed etiam veroeros."
+date: 2017-04-25
+title: "This is a<br /> Generic Page"
+description: >
+  Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+  facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+  amet nullam sed etiam veroeros.
+image: assets/images/pic01.jpg
 ---
-
-![]({{ 'assets/images/pic01.jpg' | relative_url }}){:.image .main}
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in
 faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent
