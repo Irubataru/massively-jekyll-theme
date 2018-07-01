@@ -1,8 +1,4 @@
-{% if post.header.title %}
-  {% assign title = post.header.title %}
-{% else %} 
-  {% assign title = post.title %}
-{% endif %}
+{% assign title = post.title %}
 
 <article>
   <header>
@@ -27,8 +23,10 @@
       <img src="{{ entry_image }}" alt="" />
     </a>
   {% endif %}
-  {% if post.header.description %}
-    <p>{{ post.header.description }}</p>
+  {% if post.description %}
+    <p>{{ post.description }}</p>
+  {% elsif post.excerpt %}
+    {{ post.excerpt }}
   {% endif %}
   <ul class="actions special">
     <li><a href="{{ post.url | relative_url }}" class="button">Full Story</a></li>
