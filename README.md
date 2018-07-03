@@ -96,6 +96,20 @@ background:
 Where `no_overlay` refers to the theme overlay picture which is a bit of white
 noise and a gradient added on top of the background image.
 
+One can also specify a list of scripts and styles, these will be loaded on top
+of the default list of script and stylefiles:
+
+``` yml
+scripts:
+  - assets/js/my_script.js
+  - https://code.jquery.com/jquery-3.3.1.min.js
+
+styles:
+  - assets/cs/mu_style.js
+```
+
+These variables can also be set on a page by page level in the same header.
+
 ## Layouts
 
 The theme currently has two main layouts that can be used: `home` and `post`.
