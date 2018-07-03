@@ -2,7 +2,7 @@
 
 A Jekyll version of the "Massively" theme by [HTML5 UP](https://html5up.net/).
 
-### [Demo here](http://irubataru.com/alpha-jekyll-theme/)
+### [Demo here](https://irubataru.com/massively-jekyll-theme/)
 
 ## Installation
 
